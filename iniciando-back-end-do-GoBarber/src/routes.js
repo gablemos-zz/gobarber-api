@@ -33,6 +33,7 @@ routes
   .get('/schedule', ScheduleController.index)
 
   .get('/notifications', NotificationController.index)
+  .put('/notifications/:id', NotificationController.update)
 
   .post('/files', upload.single('file'), FileController.store)
 
