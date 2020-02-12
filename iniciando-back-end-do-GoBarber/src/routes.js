@@ -16,11 +16,18 @@ const upload = multer(multerConfig)
 
 routes
   .post('/users', UserController.store)
+
   .post('/sessions', SessionController.store)
+
   .use(authMiddleware)
+
   .put('/users', UserController.update)
+
   .get('/providers', ProviderController.index)
+
+  .get('/appointments', AppointmentController.index)
   .post('/appointments', AppointmentController.store)
+
   .post('/files', upload.single('file'), FileController.store)
 
 export default routes
