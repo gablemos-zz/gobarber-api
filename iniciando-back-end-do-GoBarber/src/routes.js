@@ -29,6 +29,7 @@ routes
 
   .get('/appointments', AppointmentController.index)
   .post('/appointments', AppointmentController.store)
+  .delete('/appointments/:id', AppointmentController.delete)
 
   .get('/schedule', ScheduleController.index)
 
