@@ -1,2 +1,2 @@
-# GoStack
-Bootcamp Rocketseat
+# GoBarber
+App desenvolvido no Bootcamp Rocketseat
